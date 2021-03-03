@@ -1,0 +1,63 @@
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:url(/image/lin1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+
+}
+
+.content {
+    text-align: center;
+    
+}
+
+.title {
+    font-size: 50px;
+    text-decoration: aqua;
+    border-bottom: rgb(42, 53, 90) solid;
+}
+
+.links > a {
+    color: #d9e1e6;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+    color:red;
+}

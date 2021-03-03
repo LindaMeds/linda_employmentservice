@@ -1,0 +1,85 @@
+*{
+    margin: 1;
+    padding: 1;
+    font-family: Century Gothic;
+
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:url(/image/lin1.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+.background-color{
+    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(219, 42, 19);
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color:rgb(12, 11, 11);
+}
+ul li.active{
+    background-color: #ffff;
+    color:#000;
+}
+.logo img{
+    float:left;
+    width:110px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title h2{
+    color: rgb(17, 16, 17);
+}
+.bottomright{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid rgb(15, 14, 14);
+    padding: 10px 30px;
+    color: rgb(26, 22, 22);
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #fff;
+    color:rgb(22, 22, 22);
+}
+.title h4{
+    color: rgb(15, 15, 15);
+}
+.title h3{
+    color: rgb(12, 12, 12);
+}
+.links{
+    color:white;
+    font-size:20px;
+}
+
+

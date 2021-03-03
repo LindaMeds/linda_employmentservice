@@ -1,0 +1,52 @@
+*{
+    margin: 1;
+    padding: 1;
+    font-family: Century Gothic;
+
+}
+
+table, th, td{
+    border:1px solid black;
+    border-collapse:collapse;
+    padding-bottom: 50px;
+  }
+  th, td{
+    padding:10px;
+    text-align:left;
+    font-size:40px;
+    font-weight:200;
+  }
+  h2{
+    text-align:center;
+    color:solid black;
+    font-size:40px;
+  }
+  button{
+    text-align:center;
+    color:rgb(133, 121, 121);
+    font-size:60px;
+    padding:15px;
+    border:center;
+
+  }
+  form{
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:50px;
+  }
+  input{
+    margin-left: 5px;
+   font-size: 30px;
+   border: 5px solid red;
+   border-radius: 5px;
+   height: 40px;
+  }
+  div{
+    height:30px;
+    width:50%;
+  }
+  form .input{
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:50px;
+  }
