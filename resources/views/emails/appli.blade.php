@@ -1,12 +1,12 @@
 @component('mail::message')
-# Introduction
+# Application Approval
 
 
 <p>hello {{$userName}}
 <br>
 Your Application form has successfully approved!!
-Your Registration ID :{{$single_record->registration_id}}.
-{{$single_record->forwaderRemarks}}<br>
+Your Registration ID :{{$single_record}}.
+<br>
 
 
 Thanks

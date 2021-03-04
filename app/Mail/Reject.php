@@ -12,6 +12,7 @@ class Reject extends Mailable
     use Queueable, SerializesModels;
      
     public $userName;
+    public $single_record;
 
     /**
      * Create a new message instance.
@@ -21,6 +22,7 @@ class Reject extends Mailable
     public function __construct($applicant)
     {
         $this->userName= $applicant['Name'];
+        $this->single_record= $applicant['forwaderRemarks'];
     }
 
     /**

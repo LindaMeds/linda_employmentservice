@@ -22,9 +22,6 @@
              <p><a href="/download1/{{session('user')}}">Click here to download the Application details</a></p>
               @endif
 
-
-            <p> Download the Applicants Registration Card Here<a href="/eodownload/{{'$single_record->id'}}">  Download</a></p>   
-                    
                 </div>
             </div>
         </div>

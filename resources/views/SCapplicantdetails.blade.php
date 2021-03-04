@@ -246,27 +246,20 @@
     </table>
     </div>
      
-     <form action="{{ route('Applicant.store') }}" method="post" enctype="multipart/form-data">
+     <form action="/applicant/{{$single_record->id}}" class="reject" method="post" enctype="multipart/form-data">
        @csrf
          <div class="layout">
             <fieldset>
                <legend>NOTESHEET</legend><br>
                <label for="Reject-comments">Reason of Rejection</label>
-               <textarea name="Sign" id="Sign" cols="30" rows="3" pleceholder="Comment the reason of Rejected"></textarea>
-               <br>
-               <label for="forwader-comments">Remarks from Forwader</label>
-               <textarea name="forwaderRemarks" id="forwaderRemarks" cols="30" rows="3"></textarea>
-
+               <textarea name="forwaderRemarks" id="forwaderRemarks" cols="30" rows="3" pleceholder="Comment the reason of Rejected"></textarea>
             </fieldset>
          </div>
+         <div class="wrapper1">
+        <input type="submit" class="btn btn-danger delete-use" value="Reject">
+      </div>
      </form>
 
-  <div class="wrapper1">
-    <form method="post" class="reject" action="/applicant/{{$single_record->id}}/remarks">
-        {{ @csrf_field() }}
-        <input type="submit" class="btn btn-danger delete-use" value="Reject">
-        </form>
-  </div>
   <div class="wrapper2">
     <form method="post"  action="{{route('Applicant.approved', $single_record->id)}}" enctype = "multipart/form-data">
         {{ @csrf_field() }}

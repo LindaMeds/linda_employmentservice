@@ -39,7 +39,7 @@ Route::get('/applicants/{id}','ApplicantController@show');
 Route::get('/SCview/{id}','ApplicantController@show1');
 
 Route::delete('/Applicant/{person}','ApplicantController@destroy')->name('Applicant.destroy');
-Route::post('/applicant/{id}/remarks','clerk@rejStore');
+Route::post('/applicant/{id}','clerk@rejStore');
 
 
 Route::post('/approved/{id}','ApplicantController@approved')->name('Applicant.approved');
@@ -72,10 +72,15 @@ Route::get('/EOapplicant/action', 'LiveSearch@action')->name('live_search.action
 Route::get('/applicantinfo', 'csc@index1');
 Route::get('/applicantinfo/action', 'csc@action')->name('csc.action');
 
-Route::get('/SCapplicantinfo', 'scSearch@index2');
+Route::get('/SCapplicantinfo', 'scSearch@index2')->name('SCapplicantinfo.index2');
 Route::get('/SCapplicantinfo/action', 'scSearch@action')->name('scSearch.action');
 
 //Route::get('/searchView', 'searchController@index2');
 //Route::get('/SCapplicantinfo/action', 'searchController@action')->name('searchController.action');
 
 Route::get('/count/action', 'HomeController@count')->name('HomeController.count');
+
+Route::get('/dlSearch', function () {
+  return view('dlSearch');
+});
+Route::get('/downloadpage', 'ApplicantController@dload');

@@ -6,8 +6,7 @@ The New Application needed for Approved!!
 New Applicant'  {{$userName}} 'need to approve.
 To Check  the Application click view button
 
-@component('mail::button',['url' => ''])
-view
+@component('mail::button',[url:"{{ route('SCapplicantinfo.index2') }}"])
 @endcomponent
 
 Thanks,<br>

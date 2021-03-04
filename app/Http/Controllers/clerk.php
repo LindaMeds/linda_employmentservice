@@ -30,8 +30,9 @@ class clerk extends Controller
     public function rejStore(Request $request, $id)
 {
    $applicant = Applicant:: find($id);
-   $applicant->delete();
-   $applicant->Remarks = request('Sign');
+   //$applicant->delete();
+   $applicant->forwaderRemarks = request('forwaderRemarks');
+   $applicant->status = "Rejected";
    $applicant->save();
 
    Mail::to($applicant['Email'])->send(new Reject($applicant));

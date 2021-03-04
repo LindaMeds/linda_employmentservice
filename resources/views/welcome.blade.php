@@ -12,6 +12,18 @@
 
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <link href="/css/style1.css" rel="stylesheet">
+        <style>
+           form{
+               font-size:35px;
+               color:black;
+           }
+           input{          {
+     width: 400px;
+     font-size: 30px;
+     background-color: white;
+    
+ }
+        </style>
     </head>
     <body>
         <!-- <div class="flex-center position-ref full-height">
@@ -66,13 +78,29 @@
         <div class="title">
            <!-- <h2>EMPLOYMENT SERVICE</h2>-->
             <h4>Goverment of Mizoram</h4>
-            <h3>ENROLLMENT IN EMPLAYMENT EXCHANGE</h3>
+            <h3>ENROLLMENT IN EMPLOYMENT EXCHANGE</h3>
         </div>
+        <form method="GET" action="/downloadpage">
+         @csrf 
+          <div class="form-group row">
+             <label class="col-md-6 col-form-label text-md-right">Download/Check Applicants Status</label>
+
+             <div class="col-md-14">
+               <input id="registration_id" size="40"  type="text" class="form-control @error('registration_id') is-invalid @enderror" name="registration_id" value="{{ old('email') }}" placeholder="Enter Registration_ID" required autocomplete autofocus>
+            </div>
+        </div>
+
+        <div class="form-group row md-0">
+           <div class="col-md-8 offset-md-4">
+              <button type="submit" class="btn btn-primary">
+                  {{__('CHECK')}}
+              </button>
+           </div>
+        </div>
+     </form>
 
         <div class="bottomright">
             <a href="#" class="btn">LEARN MORE</a>
-          <p>Check Applicants Status  <a href="/searchView"  class="btn">CHECK</a></p>
-
         </div>
     </header>
             

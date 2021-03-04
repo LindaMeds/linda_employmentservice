@@ -12,6 +12,7 @@ class Approved extends Mailable
     use Queueable, SerializesModels;
 
     public $userName;
+    public $single_record;
     
 
     /**
@@ -23,6 +24,7 @@ class Approved extends Mailable
     {
         //
         $this->userName= $applicant['Name'];
+        $this->single_record= $applicant['registration_id'];
     }
 
     /**

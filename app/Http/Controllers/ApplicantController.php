@@ -69,6 +69,11 @@ class ApplicantController extends Controller
          'WorkEx' => 'image|nullable|max:1999',
          'Medical' => 'image|nullable|max:1999',
          'Email' => 'required |email',
+         'Name' => 'required',
+         'DateOfBirth' => 'required',
+         'ContectNo' => 'required|number|max:10 digit',
+
+
         ]);
 
       //handle file upload
@@ -312,6 +317,13 @@ public function eoview($id)
      $single_record = Applicant::find($id);
      return view('Eoview')->with('single_record',  $single_record);
 }
+
+public function dload(Request $request)
+  {
+    $single_record=request('registration_id');
+    $find=Applicant::where('registration_id','=',$single_record)->first();
+    return view('/dlSearch')->with('single_record',$find);
+  }
 
 
 }

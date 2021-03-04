@@ -1,8 +1,8 @@
 @component('mail::message')
-# Introduction
+# Application Rejection
 
 <p>hello {{$userName}}<br>
-    Your Application has been Rejected!!!!! due to {{$single_record->Sign}}
+    Your Application has been Rejected!!!!! due to {{$single_record}}
 
 
 Thanks

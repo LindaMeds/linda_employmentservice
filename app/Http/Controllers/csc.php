@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Applicant;
 use DB;
 
 class csc extends Controller
 {
+
+  
     
     function index(){
         return view('csc');
